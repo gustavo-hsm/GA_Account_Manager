@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="offset-4"></div>
+    <div class="col-4">
+        <div>Bem-vindo ao GA Account Summary.</div>
+        <div>Clique no botão abaixo para iniciar.</div>
+        <form action="/summary" method="POST" novalidate>
+            <p>{{ form.start() }}</p>
+        </form>        
+    </div>
+    <div class="offset-4"></div>
+</div>
+{% endblock %}
