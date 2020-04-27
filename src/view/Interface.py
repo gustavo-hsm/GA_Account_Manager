@@ -6,11 +6,6 @@ from ..controller import MySQL_Integration as msql
 from flask import render_template
 from flask import request
 
-#TODO: Implementar a classe GA_API_Handler como um Singleton
-api_handler = None
-api_accounts = None
-api_users = None
-
 def render_welcome():
     return render_template('welcome.html',
         title='Home',
@@ -18,7 +13,7 @@ def render_welcome():
 
 def render_account_summary():
     #Construindo um token de acesso à API do Google Analytics
-    api_handler = ga.GA_API_Handler()
+    api_handler = ga.GA_API_Handler().get_instance()
 
     #Buscando contas, propriedades e vistas
     api_accounts = api_handler.query_account_summary()
@@ -37,7 +32,14 @@ def render_account_summary():
         form=forms.Button_DatabaseSync())
 
 def render_db_sync():
-    db = msql.MySQL_DB()
+    #Construindo um token de acesso à API do Google Analytics
+    api_handler = ga.GA_API_Handler().get_instance()
+
+    #Buscando contas, propriedades e vistas
+    api_accounts = api_handler.query_account_summary()
+
+    #Buscando usuários
+    api_users = api_handler.query_all_users(api_accounts)
 
     for account in api_accounts:
         db.insert_account(account)
