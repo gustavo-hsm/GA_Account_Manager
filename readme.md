@@ -55,7 +55,9 @@ Quando ocorrer um erro durante a execução do aplicativo, o usuário será dire
 
 
 ## Estrutura do Database
-O Database desta aplicação segue o seguinte formato:
+O Database desta aplicação segue o formato abaixo:
+
+![DB_Structure](readme_images/DB_Structure.png)
 
 
 ### Inserindo registros duplicados
