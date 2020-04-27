@@ -2,5 +2,6 @@
 *__pycache__*
 *.pyc
 service_account_secrets/*
+!service_account_secrets/template_client_secret.json
 scope.md
 logs/*
