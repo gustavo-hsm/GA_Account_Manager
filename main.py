@@ -1,6 +1,5 @@
 from src.view import Interface as i
 from src.controller import Log_Handler as lh
-from src.controller import GA_API_Handler as ga
 
 from flask import Flask
 from logging import INFO
