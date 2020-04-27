@@ -1,9 +1,9 @@
 class User:
 
     def __init__(self,
-        user_id, user_account_id, user_email,
-        user_local_permission, 
-        user_global_permission):
+                 user_id, user_account_id, user_email,
+                 user_local_permission,
+                 user_global_permission):
         self.user_id = user_id
         self.user_account_id = user_account_id
         self.user_email = user_email
