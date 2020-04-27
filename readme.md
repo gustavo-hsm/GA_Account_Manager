@@ -28,10 +28,12 @@ Os scripts disponibilizados no arquivo 'start_db.sql' devem ser executados para 
 Inicialmente, é necessário substituir o arquivo *template_client_secret.json* pelas credenciais de sua conta de serviço no Google Analytics.
 
 No diretório da aplicação, ativar o ambiente virtual da aplicação com o seguinte comando:
-    source venv/bin/activate
+
+`source venv/bin/activate`
 
 Em seguida, executar o seguinte comando:
-    flask run
+
+`flask run`
 
 Uma instância desta aplicação será disponibilizada para acesso HTTP no endereço http://127.0.0.1:5000, que pode ser acessada pelo usuário via Browser:
 
