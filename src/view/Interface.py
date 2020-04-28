@@ -35,6 +35,9 @@ def render_account_summary():
 
 
 def render_db_sync():
+    # Token de acesso ao Database
+    db = msql.MySQL_DB()
+
     # Construindo um token de acesso à API do Google Analytics
     api_handler = ga.GA_API_Handler().get_instance()
 
