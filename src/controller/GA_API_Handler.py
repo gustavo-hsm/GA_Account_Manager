@@ -38,8 +38,8 @@ class GA_API_Handler:
                 'https://www.googleapis.com/auth/analytics.readonly',
                 'https://www.googleapis.com/auth/analytics.edit',
                 'https://www.googleapis.com/auth/analytics.manage.users',
-                'https://www.googleapis.com/auth/analytics.manage.users.\
-                    readonly']
+                'https://www.googleapis.com/auth/analytics.manage.users'
+                    + '.readonly']
             # Carregando secrets.JSON
             self.secrets = self._find_secrets(dir_secrets)
 
