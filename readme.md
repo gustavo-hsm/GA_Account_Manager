@@ -21,7 +21,7 @@ Para mais informações sobre a criação e utilização de contas de serviço, 
 ### Utilizando a integração com MySQL
 Para utilizar a funcionalidade de integração com o MySQL, é necessário que exista uma instância deste SGBD instalada no ambiente de operação. 
 Os scripts disponibilizados no arquivo 'start_db.sql' devem ser executados para iniciar a estrutura básica do DB. Isto pode ser feito com o seguinte comando:
-    mysql < "start_db.sql"
+`mysql < "start_db.sql"`
 
 
 ## Modo de utilização
