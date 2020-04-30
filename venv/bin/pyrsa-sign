@@ -1,4 +1,4 @@
-#!/home/gustavo/Git/MirumCodingChallenge/venv/bin/python
+#!/home/gustavo/Git/GA_Account_Summary/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
