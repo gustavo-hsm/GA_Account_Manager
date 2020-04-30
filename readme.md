@@ -36,10 +36,13 @@ Em seguida, executar o seguinte comando:
 
 `venv/bin/python -m flask run`
 
-Uma instância desta aplicação será disponibilizada para acesso HTTP no endereço http://127.0.0.1:5000, que pode ser acessada pelo usuário via Browser:
+Por padrão, uma instância desta aplicação será disponibilizada para acesso HTTP no endereço http://127.0.0.1:5000. É possível direcionar o IP de acesso adicionando um parâmetro *host*, por exemplo:
+
+`venv/bin/python -m flask run --host='192.168.0.1'`
+
+Após carregar a aplicação e acessar o endereço via browser, a seguinte página é apresentada:
 
 ![Welcome](readme_images/Welcome.png)
-
 
 O usuário pode interagir com o botão "Iniciar", que irá utilizar a Conta de Serviço para disponibilizar um token de acesso à API e consultar as informações relevantes para esta aplicação:
 
