@@ -34,7 +34,7 @@ No diretório da aplicação, ativar o ambiente virtual da aplicação com o seg
 
 Em seguida, executar o seguinte comando:
 
-`flask run`
+`venv/bin/python -m flask run`
 
 Uma instância desta aplicação será disponibilizada para acesso HTTP no endereço http://127.0.0.1:5000, que pode ser acessada pelo usuário via Browser:
 
